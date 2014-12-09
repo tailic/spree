@@ -4,7 +4,7 @@ module Spree
       class User < PromotionRule
         belongs_to :user, class_name: "::#{Spree.user_class.to_s}"
         has_and_belongs_to_many :users, class_name: "::#{Spree.user_class.to_s}", join_table: 'spree_promotion_rules_users', foreign_key: 'promotion_rule_id'
-
+        
         def applicable?(promotable)
           promotable.is_a?(Spree::Order)
         end
