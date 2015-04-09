@@ -1,3 +1,6 @@
+.fa, table th .handle, table td .handle, .icon-user, .icon-signout, .icon-external-link, #ui-datepicker-div .ui-datepicker-header .ui-datepicker-prev .ui-icon, #ui-datepicker-div .ui-datepicker-header .ui-datepicker-next .ui-icon, .select2-container .select2-choice .select2-search-choice-close, .select2-search, .select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close, #taxonomy_tree .jstree-icon, #taxonomy_tree li a .jstree-icon, #vakata-dragged.jstree-apple .jstree-invalid, #vakata-dragged.jstree-apple .jstree-ok {
+  font-family: "FontAwesome","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !important;
+}
 // IE general hacks
 html.ie {
 
@@ -10,7 +13,7 @@ html.ie {
   }
 
   // Fix select2 background gradient. (It uses filter gradients for IE)
-  .select2-choice, .select2-choice div, 
+  .select2-choice, .select2-choice div,
   .select2-container-multi .select2-search-choice,
   .select2-container:hover .select2-choice,
   .select2-container.select2-container-active .select2-choice {
@@ -41,7 +44,7 @@ html.ie8 {
     font-style: normal;
   }
 
-  // Fix white border around filter-actions 
+  // Fix white border around filter-actions
   .filter-actions {
     margin-bottom: -45px;
 
@@ -55,12 +58,12 @@ html.ie8 {
     }
   }
 
-  // Fix legend align center 
+  // Fix legend align center
   legend {
     display: table;
   }
 
-  // Sidebar align with fieldsets 
+  // Sidebar align with fieldsets
   #sidebar {
     margin-top: 27px;
 
