@@ -13,38 +13,7 @@
 <% end %>
 
 <% content_for :table_filter do %>
-  <div data-hook="admin_promotions_index_search">
-    <%= search_form_for [:admin, @search] do |f| %>
-      <div class="five columns">
-        <div class="field">
-          <%= label_tag nil, Spree.t(:name) %>
-          <%= f.text_field :name_cont, tabindex: 1 %>
-        </div>
-      </div>
 
-      <div class="five columns">
-        <div class="field">
-          <%= label_tag nil, Spree.t(:code) %>
-          <%= f.text_field :code_cont, tabindex: 1 %>
-        </div>
-      </div>
-
-      <div class="five columns">
-        <div class="field">
-          <%= label_tag nil, Spree.t(:path) %>
-          <%= f.text_field :path_cont, tabindex: 1 %>
-        </div>
-      </div>
-
-      <div class="clearfix"></div>
-
-      <div class="actions filter-actions">
-        <div data-hook="admin_promotions_index_search_buttons">
-          <%= button Spree.t(:filter_results), 'search' %>
-        </div>
-      </div>
-    <% end %>
-  </div>
 <% end %>
 
 
