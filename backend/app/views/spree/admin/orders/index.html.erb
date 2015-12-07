@@ -125,7 +125,7 @@
           <span class="state <%= order.state.downcase %>"><%= Spree.t("order_state.#{order.state.downcase}") %></span>
         </td>
         <%
-           payment_state_text = if order.payments.valid.last.payment_method.type == "Spree::PaymentMethod::Check" && order.payment_state == 'balance_due'
+           payment_state_text = if order.payments.valid.last.try(:payment_method).try(:type) == "Spree::PaymentMethod::Check" && order.payment_state == 'balance_due'
                                   Spree.t("payment_states_check.#{order.payment_state}")
                                 else
                                   Spree.t("payment_states.#{order.payment_state}")
