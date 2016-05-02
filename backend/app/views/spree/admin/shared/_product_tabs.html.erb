@@ -2,8 +2,10 @@
   <%= Spree.t(:editing_product) %> &ldquo;<%= @product.name %>&rdquo;
 <% end %>
 
-<% content_for :sidebar_title do %>
-  <span class="sku"><%= @product.sku %></span>
+<% unless @product.has_variants? %>
+  <% content_for :sidebar_title do %>
+    <span class="sku"><%= @product.sku %></span>
+  <% end %>
 <% end %>
 
 <% content_for :sidebar do %>
